@@ -1,0 +1,52 @@
+{
+  "annual_rate": 0,
+  "scenarios": [
+    {
+      "id": "none",
+      "probability": "1/5",
+      "losses": {
+        "east": "0",
+        "west": "0"
+      }
+    },
+    {
+      "id": "river",
+      "probability": "1/2",
+      "losses": {
+        "east": "21/2",
+        "west": "5"
+      }
+    },
+    {
+      "id": "storm",
+      "probability": "3/10",
+      "losses": {
+        "east": "25",
+        "west": "41/2"
+      }
+    }
+  ],
+  "regional_contract": {
+    "east": {
+      "deductible": "2",
+      "limit": "18"
+    },
+    "west": {
+      "deductible": "3",
+      "limit": "12"
+    }
+  },
+  "annual_contract": {
+    "deductible": "10",
+    "limit": "40"
+  },
+  "step": "1",
+  "max_grid": 250,
+  "alpha": [
+    0.9,
+    0.95,
+    0.99
+  ],
+  "numeric_tolerance": 1e-10,
+  "poisson_check_terms": 30
+}
